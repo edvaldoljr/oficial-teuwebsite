@@ -73,9 +73,6 @@ document.addEventListener("scroll", function() {
   }
 });
 
-ScrollReveal().reveal('.about_img', { delay: 600, duration: 1000, origin: 'right', distance: '50px' });
-ScrollReveal().reveal('.text-1-1', { delay: 600, duration: 1000, origin: 'right', distance: '50px' });
-
 
 //incluso
 //lazy loading
@@ -87,11 +84,7 @@ document.addEventListener("scroll", function() {
   }
 });
 
-// Inicialize o ScrollReveal
-ScrollReveal().reveal('.text-h', { delay: 200, duration: 1000, origin: 'bottom', distance: '50px' });
-ScrollReveal().reveal('.oi1', { delay: 400, duration: 1000, origin: 'bottom', distance: '50px' });
-ScrollReveal().reveal('.oi2', { delay: 600, duration: 1000, origin: 'bottom', distance: '50px' });
-ScrollReveal().reveal('.oi3', { delay: 800, duration: 1000, origin: 'bottom', distance: '50px' });
+
 
 //banner
 //lazy loading
