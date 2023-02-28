@@ -103,8 +103,6 @@ document.addEventListener("scroll", function() {
   }
 });
 
-ScrollReveal().reveal('.banner-h3', { delay: 800, duration: 1000, origin: 'right', distance: '50px' });
-
 //PERGUNTAS
 const pergunta = document.querySelectorAll('.pergunta')
 const resposta = document.querySelectorAll('.resposta')

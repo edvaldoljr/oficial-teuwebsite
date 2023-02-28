@@ -342,10 +342,10 @@ body.dark-theme {
 .incluso {
     opacity: 0;
     transform: translateY(100px);
-    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
   }
   
-  .incluso.mostrando {
+.incluso.mostrando {
     opacity: 1;
     transform: translateY(0);
   }
@@ -409,6 +409,17 @@ body.dark-theme {
     color: #fff;
     text-transform: uppercase;
     font-size: 3.5rem;
+}
+
+/*HOSPEDAGEM */
+.hospedagem-text {
+    max-width: 30rem;
+}
+
+.hospedagem-text .text-hospedagem-h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    line-height: 4rem;
 }
 
 .hospedagem {
