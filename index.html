@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsivo.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="shortcut icon" href="logo-fav.png" type="image/x-icon" />
+    <title>webSite</title>
+</head>
+
+<body>
+     
+    <!-- MENU -->
+    <header>
+        <nav class="navigation">
+            <img class="logo-img" src="logo-img.png" alt="Telas" ><a href="#" class="logo">T<span>eu</span>W<span>eb</span>S<span>ite</span></a>
+            
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home">Home</a></li>
+                <li class="nav-item"><a href="#perguntas">Dúvidas</a></li>
+                <li class="nav-item"><a href="#contato">Contato</a></li>
+                <li class="nav-item"><a href="#quemsomos" onclick="openModal('vis-modal')">Quem somos</a></li>
+                <button class="idioma-botao" id="english-button" onclick="changeLanguage()">English</button>
+
+                <li><button id="theme-toggle" onclick="mudarIcon()"><i class="bx bx-sun" id="icon-theme"></i></button></li>
+                
+            </ul>
+            <div class="menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="container">
+
+        <a href="https://api.whatsapp.com/send?phone=5519983064893&text=Olá gostaria de ter meu Web Site!" class="float"
+            target="_blank"><i class="fa fa-whatsapp my-float"></i></a>
+
+        <section id="vis-modal" class="modal">
+            <div class="content-modal">
+                <div class="header-modal">
+                    <h3 class="title-modal">Sobre Nós</h3>
+                    <div class="rodape-modal">
+                        <button class="btn-outline-success" onclick="closedModal('vis-modal')">Fechar</button>
+                    </div>
+                </div>
+    
+                <div class="body-modal">
+                    <p class="p-modal">
+                        <b>TeuWebSite</b> é uma empresa criada por quatro Desenvolvedores e um Mentor, que buscam promover o acesso a um site para todos,independentemente de sua renda ou status socioeconômico.
+                    </p>
+                    <p class="p-modal">
+                        Desenvolvemos sites web, e oferecemos serviços de hospedagens,
+                        e futuramente também desenvolveremos aplicativos mobile. Utilizaremos as melhores tecnologias para o desenvolvimento da sua página web.
+                    </p>
+                    <p class="p-modal">
+                        Queremos fornecer uma plataforma que seja acessível e fácil de usar para que todos possam se conectar com as informações e serviços que precisam para crescer e prosperar.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- INICIO -->
+        <section class="home" id="home">
+            <div class="home-text">
+                <br><br>
+
+                <h4 class="text-h4">Bem Vindo ao TeuWebSite</h4>
+                <h1 class="text-h1"> Sites Profissionais para o seu negócio.</h1>
+                <p><b>Criamos sites modernos e responsivos que ajudarão você a se destacar e expandir seus negócios.</b></p>
+                <button class="botao" onclick="finalizarPedido()">Quero um site profissional!</button>
+            </div>
+            <div class="home-img">
+                <img src="telas.png" alt="Telas">
+            </div>
+        </section>
+
+        <!-- cuidamos do seu site -->
+        <section class="about">
+            <div class="about_img">
+                <img src="cuidados.png" alt="Telas">
+            </div>
+            <div class="home-text">
+                <h1 class="text-h1">Nós cuidamos do seu site enquanto você se preocupa com o seu negócio.</h1><br>
+                <h1 class="text-1-1">GARANTA A PRESENÇA ONLINE DE SUA EMPRESA E AMPLIE A VISIBILIDADE.</h1><br>
+                <button class="botao" onclick="finalizarPedido()">Quero um site profissional!</button>
+            </div>
+        </section>
+
+        <!-- INCLUSO -->
+        
+        <section class="incluso">
+            <h1 class="text-h">O QUE ESTÁ INCLUSO NO SEU PLANO</h1>
+                <div class="plano">
+                    <div class="oi1">
+                        <img src="server.png" alt="Ícone de hospedagem" />
+                        <h4>HOSPEDAGEM INCLUSA</h4><br>
+                        <p>Armazene todo o conteúdo do <br> seu site que compõe <br> a sua página na internet</p>
+                    </div>
+                    <div class="oi2">
+                        <img src="email.png" alt="Ícone de e-mail">
+                        <h4>E-MAIL PROFISSIONAL</h4><br>
+                        <p>E-mail profissional <br> para prospecção de novos <br> clientes. (10 caixas de e-mails de 2GB)</p>
+                    </div>
+                    <div class="oi3">
+                        <img src="responsivo.png" alt="Ícone de site responsivo">
+                        <h4>SITE RESPONSIVO</h4><br>
+                        <p>Seu site adaptado de <br> forma correta em dispositivos móveis.</p>
+                    </div>
+                    <button class="botao" onclick="finalizarPedido()">Quero um site profissional!</button>
+                </div>
+        </section>
+
+        <!-- BANNER -->
+        <section class="banner">
+            <h3>APENAS R$ 54,90/MÊS</h3>
+        </section>
+
+        <!-- HOSPEDAGEM -->
+        <section class="hospedagem">
+            <div class="home-text">
+                <h2 class="text-h2">HOSPEDAGEM PROFISSIONAL TURBO</h2><br>
+                <h2 class="text-2">
+                    Incluso no plano para acompanhar o crescimento do seu negócio na internet</h2>
+                <br><br>
+                <button class="botao" onclick="finalizarPedido()">Quero um site profissional!</button>
+
+            </div>
+            <div class="about_img">
+                <img src="servidor.png" alt="Telas">
+            </div>
+        </section>
+
+        <section class="missao">
+            <h1 class="text-missao">MISSÃO</h1>
+                <div class="txt-missao">
+                    <div class="oi1">
+                        <img class="img-missao" src="acesso.png" alt="Ícone de hospedagem" /><br><br>
+                        <p>Promover o acesso a um site para todos, independentemente de sua renda ou status socioeconômico. Acreditamos que todos merecem ter a oportunidade de evoluir e se desenvolver, e isso só pode ser alcançado através do acesso à informação e recursos on-line.</p>
+                    </div>
+                    <div class="oi2">
+                        <img class="img-missao"  src="crescer.png" alt="Ícone de e-mail"><br><br>
+                        <p>Estamos comprometidos em fornecer uma plataforma que seja acessível e fácil de usar para que todos possam se conectar com as informações e serviços que precisam para crescer e prosperar. Queremos capacitar as pessoas a explorar seu potencial e alcançar seus objetivos, independentemente de suas circunstâncias.</p>
+                    </div>
+                    <div class="oi3">
+                        <img class="img-missao" src="oportunidade.png" alt="Ícone de site responsivo"><br><br>
+                        <p>Nossa missão é impulsionada pelo desejo de criar um mundo mais justo e equitativo, onde todos tenham acesso igualitário às oportunidades e recursos. Acreditamos que a inclusão digital é uma peça fundamental nesse processo e estamos empenhados em fazer a nossa parte para tornar isso uma realidade.</p>
+                    </div>>
+                </div>
+        </section>
+
+        <!-- <section class="incluso">
+            <div class="todas-div">
+                <div class="plano">
+                    <div class="oi1">
+                        <img src="src/img/" alt="Ícone de hospedagem"/>
+                        <h2>BRONZE</h2><br>
+                            <li><b>* Hospedagem</b></li>
+                            <li><b>* 10 caixas de e-mails de 2GB</b></li>
+                            <li><b>* Site Responsivo</b></li>
+                      </div>
+                      <div class="oi2">
+                        <img src="src/img/" alt="Ícone de e-mail">
+                        <h2>PRATA</h2><br>
+                            <li><b>* Hospedagem</b></li>
+                            <li><b>* 10 caixas de e-mails de 2GB</b></li>
+                            <li><b>* Site Responsivo</b></li>
+                      </div>
+                      <div class="oi3">
+                        <img src="src/img/um.png" alt="Ícone de site responsivo"/>
+                        <br><br>
+                        <h2>OURO</h2><br>
+                            <li><b>* Hospedagem</b></li>
+                            <li><b>* 10 caixas de e-mails de 2GB</b></li>
+                            <li><b>* Site Responsivo</b></li>
+                      </div>
+                <button class="botao" onclick="finalizarPedido()">Quero um site profissional!</button>
+                </div>
+            </div>
+        </section><hr> -->
+
+
+        <!-- PERGUNTAS -->
+        <section class="faq-container" id="perguntas">
+            <h3 class="faq-titulo">Perguntas frequentes</h3>
+            <div class="faq">
+                <div class="pergunta">
+                    <div class="pergunta1">
+                        <h3 >O que preciso fazer para meu site?</h3>
+                    </div>
+                    <i class="uil uil-angle-down"></i>
+                </div>
+                <div class="resposta">
+                    <div class="resposta1">
+                        <p class="p1">Domínio (www.nomedasuaempresa.com.br).</p>
+                        <p class="p2">Criação do Site propriamente dita.</p>
+                        <p class="p3">Hospedagem e Manutenção do Site.</p>
+                        <p class="p4">Com esses 3 elementos você consegue colocar seu site no ar e nós podemos cuidar 100% de tudo o que você precisa.</p>
+                    </div>
+                </div>
+                <div class="pergunta">
+                    <div class="pergunta2">
+                        <h3 >Qual valor do domínio?</h3>
+                    </div>
+                    <i class="uil uil-angle-down"></i>
+                </div>
+                <div class="resposta">
+                    <div class="resposta2">
+                        <p class="p1">O domínio deve ser adquirido no registro.br, órgão que controla todos os domínios com final .br.</p>
+                        <p class="p2">valor de cada domínio é de R$ 40,00/ano.</p><br>
+                    </div>
+                </div>
+                <div class="pergunta">
+                    <div class="pergunta3">
+                        <h3>O simples fato de criar um site é garantia de que ele vai nas buscas do google?</h3>  
+                    </div>
+                    <i class="uil uil-angle-down"></i>
+                </div>
+                <div class="resposta">
+                    <p class="resposta3">Não, criar um site é o primeiro passo para começar a aparecer no Google.</p><br>
+                </div>
+
+                <div class="pergunta">
+                    <div class="pergunta4">
+                        <h3 >O que eu preciso fazer para aparecer no google?</h3>
+                    </div>
+                    <i class="uil uil-angle-down"></i>
+                    
+                </div>
+                <div class="resposta">
+                    <div class="resposta4">
+                        <p class="p1">Depois que Criar um Site, você terá três alternativas para começar a aparecer no Google:</p>
+                        <p class="p2">1: Google Ads - publicidade paga no Google</p>
+                        <p class="p3">2: Google Orgânico - resultados gratuitos do Google</p>
+                        <p class="p4">3: Ambos </p>
+                        <p class="p5"> Tanto o Google Ads, quanto o Google Orgânico trazem resultados, cada um com sua característica e velocidade.</p><br>
+                    </div>
+                </div>
+                <div class="pergunta">
+                    <div class="pergunta5">
+                        <h3>Qual é o melhor caminho para conseguir resultados rápidos no Google?</h3>
+                    </div>
+                    <i class="uil uil-angle-down"></i>
+                </div>
+                <div class="resposta">
+                    <div class="resposta5">
+                        <p class="p">Com absoluta certeza o caminho mais seguro se obter resultado de forma rápida no Google é
+                        investir no Google Ads - plataforma paga do Google.</p><br>
+                    </div>
+                </div>
+                <div class="pergunta">
+                    <div class="pergunta6">
+                        <h3>Quanto devo investir no Google Ads?</h3>
+                    </div>
+                    <i class="uil uil-angle-down"></i>
+                </div>
+                <div class="resposta">
+                    <div class="resposta6">
+                        <p class="p1">O investimento necessário para conseguir bons resultados no Google Ads depende de alguns fatores que precisam ser analisados, como: volume de pesquisa, concorrência, valor do clique.</p>
+                        <p class="p2">Uma campanha bem estruturada do Google Ads precisa considerar um orçamento de pelo menos 300 cliques.</p><br>
+                    </div>
+                </div>
+                <div class="pergunta">
+                    <div class="pergunta7">
+                        <h3>O serviço de Consultoria SEO traz resultados rápidos?</h3>
+                    </div>
+                    <i class="uil uil-angle-down"></i>
+                </div>
+                <div class="resposta">
+                    <div class="resposta7">
+                        <p>Em termos gerais um trabalho de Consultoria SEO leva alguns meses para surtir um resultado
+                            eficiente. Dependendo do nível de concorrência dos termos pode se levar de 6 a 12 meses para os primeiros resultados aparecerem.</p><br>
+                    </div>
+                </div>
+                <div class="pergunta">
+                    <div class="pergunta8">
+                        <h3>Eu tenho direito de levar meu Site Criado para outro servidor?</h3>
+                    </div>
+                    <i class="uil uil-angle-down"></i>
+                </div>
+                <div class="resposta">
+                    <div class="resposta8">
+                        <p class="p1">Sim! Mas o servidor de hospedagem está diretamente ligado à velocidade de carregamento do site e isso interfere no seu posicionamento orgânico e resultado das campanhas de Google Ads.</p><br>
+                        <p class="p2">Apesar disso, o nosso cliente é proprietário do site adquirido e pode levar esse conteúdo para o servidor que desejar - é importante verificar a compatibilidade do servidor com a programação de alto nível desenvolvida em WordPress.</p><br>
+                    </div>
+                </div>
+            </div>
+            </div><br><br>
+            <button class="botao" onclick="finalizarPedido()">Quero um site profissional!</button>
+        </section>
+
+        <!-- testando PHP -->
+        <!-- <section class="fale-conosco">
+            <div class="contato" id="contato">
+              <img src="fale.png" alt="">
+              <div class="middleblock">
+                <div class="contactform">
+                  <form action="enviar.php" method="post">
+                    <input type="text" name="Nome" placeholder="Nome" id="nome" class="texthalf" required />
+                    <input type="text" name="Telefone" placeholder="Telefone" id="Telefone" class="texthalf2" required />
+                    <input type="text" name="Email" placeholder="Email" id="email" class="fulltext" required />
+                    <div class="">
+                      <textarea cols="30" rows="10" name="Mensagem" placeholder="Mensagem" id="escrever...." required></textarea>
+                    </div>
+                    <button class="button">Quero um site profissional!</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </section> -->
+
+          <section class="fale-conosco">
+            <div class="contato" id="contato">
+              <img src="fale.png" alt="">
+              <div class="middleblock">
+                <div class="contactform">
+                    <form action="https://formsubmit.co/contato@teuwebsite.com.br" method="POST">
+                    <input type="text" name="Nome" placeholder="Nome" id="nome" class="texthalf" required />
+                    <input type="text" name="Telefone" placeholder="Telefone" id="Telefone" class="texthalf2" required />
+                    <input type="text" name="Email" placeholder="Email" id="email" class="fulltext" required />
+                    <div class="">
+                      <textarea cols="30" rows="10" name="Mensagem" placeholder="Mensagem" id="escrever...." required></textarea>
+                    </div>
+                    <button class="botao">Quero um site profissional!</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <footer>
+            <div class="footer-content">
+                <div>
+                    <h3><span class="T">T</span>eu<span class="W">W</span>eb<span class="S">S</span>ite</h3>
+                    <p>Empresa voltada para o desenvolvimento de sites Web</p>
+                </div>
+                <div class="foolder-social">
+                    <ul class="socials">
+                        <li><a href="#"><img class="whatsapp" src="whatsapp.png" alt="whatsapp"></a></li>
+                        <li><a href="#"><img class="Linkedin" src="linkedin.png" alt="Linkedin"></a></li>
+                        <li><a href="#"><img class="Instagram" src="instagram.png" alt="instagram"></a></li>
+                        <li><a href="#"><img class="Facebook" src="facebook.png" alt="facebook"></a></li>
+                        <li><a href="#"><img class="Facebook" src="telegram.png" alt="telegram"></a></li>
+                    </ul>
+                </div>
+                <p class="rodape">Copyright &copy;2023 TeuWebSite</p>
+            </div>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
