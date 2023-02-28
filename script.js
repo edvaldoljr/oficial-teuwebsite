@@ -86,6 +86,25 @@ document.addEventListener("scroll", function() {
     document.querySelector(".incluso").classList.add("mostrando");
   }
 });
+
+// Inicialize o ScrollReveal
+ScrollReveal().reveal('.text-h', { delay: 200, duration: 1000, origin: 'bottom', distance: '50px' });
+ScrollReveal().reveal('.oi1', { delay: 400, duration: 1000, origin: 'bottom', distance: '50px' });
+ScrollReveal().reveal('.oi2', { delay: 600, duration: 1000, origin: 'bottom', distance: '50px' });
+ScrollReveal().reveal('.oi3', { delay: 800, duration: 1000, origin: 'bottom', distance: '50px' });
+
+//banner
+//lazy loading
+document.addEventListener("scroll", function() {
+  var alturaTela = window.innerHeight;
+  var posicao = document.querySelector(".banner").getBoundingClientRect().top;
+  if (posicao - alturaTela <= 0) {
+    document.querySelector(".banner").classList.add("mostrando");
+  }
+});
+
+ScrollReveal().reveal('.banner-h3', { delay: 800, duration: 1000, origin: 'right', distance: '50px' });
+
 //PERGUNTAS
 const pergunta = document.querySelectorAll('.pergunta')
 const resposta = document.querySelectorAll('.resposta')
