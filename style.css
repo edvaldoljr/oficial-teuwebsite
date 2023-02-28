@@ -481,11 +481,8 @@ body.dark-theme {
 .missao .txt-missao {
     display: flex;
     align-items: center;
-    padding: 5px;
     justify-content: space-between;
 }
-
-
 
 /*  sessão FAQ Perguntas */
 .faq-container {
