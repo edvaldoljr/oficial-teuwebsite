@@ -376,10 +376,18 @@ body.dark-theme {
 
 } 
 
-
-
 /* sessão banner */
-
+/* lazy loading */
+.banner {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  }
+  
+  .banner.mostrando {
+    opacity: 1;
+    transform: translateY(0);
+  }
 
 .banner {
     background: -webkit-gradient(linear,
