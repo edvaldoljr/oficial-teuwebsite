@@ -366,7 +366,6 @@ body.dark-theme {
 .incluso .plano {
     display: flex;
     align-items: center;
-    padding: 5px;
     justify-content: space-between;
 }
 
@@ -413,11 +412,15 @@ body.dark-theme {
 
 /*HOSPEDAGEM */
 .hospedagem-text {
-    max-width: 30rem;
+    max-width: 25rem;
+}
+
+.hospedagem-text .text-2 {
+    font-size: 1rem;
 }
 
 .hospedagem-text .text-hospedagem-h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
     line-height: 4rem;
 }
