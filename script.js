@@ -58,6 +58,34 @@ function finalizarPedido() {
   window.open("https://wa.me/5519983064893?text=" + mensagem);
 }
 
+//Home 
+ScrollReveal().reveal('.text-h4', { delay: 600, duration: 1000, origin: 'right', distance: '50px' });
+ScrollReveal().reveal('.text-h1', { delay: 600, duration: 1000, origin: 'left', distance: '50px' });
+ScrollReveal().reveal('.text-b', { delay: 600, duration: 1000, origin: 'right', distance: '50px' });
+
+//about
+//lazy loading
+document.addEventListener("scroll", function() {
+  var alturaTela = window.innerHeight;
+  var posicao = document.querySelector(".about_img").getBoundingClientRect().top;
+  if (posicao - alturaTela <= 0) {
+    document.querySelector(".about").classList.add("mostrando");
+  }
+});
+
+ScrollReveal().reveal('.about_img', { delay: 600, duration: 1000, origin: 'right', distance: '50px' });
+ScrollReveal().reveal('.text-1-1', { delay: 600, duration: 1000, origin: 'right', distance: '50px' });
+
+
+//incluso
+//lazy loading
+document.addEventListener("scroll", function() {
+  var alturaTela = window.innerHeight;
+  var posicao = document.querySelector(".incluso").getBoundingClientRect().top;
+  if (posicao - alturaTela <= 0) {
+    document.querySelector(".incluso").classList.add("mostrando");
+  }
+});
 //PERGUNTAS
 const pergunta = document.querySelectorAll('.pergunta')
 const resposta = document.querySelectorAll('.resposta')
